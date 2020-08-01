@@ -1,5 +1,7 @@
 # Docker Ubuntu Systemd
 
+![Docker Image CI](https://github.com/daos-do/docker-ubuntu-systemd/workflows/Docker%20Image%20CI/badge.svg)
+
 A Dockerfile for building Ubuntu images that have systemd enabled.
 
 ## Branches
