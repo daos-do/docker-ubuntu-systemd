@@ -1,26 +1,25 @@
 # Docker Ubuntu Systemd
 
-[![docker build](https://github.com/daos-do/docker-ubuntu-systemd/workflows/docker%20build/badge.svg?branch=18.04)](https://hub.docker.com/repository/docker/daosdo/ubuntu-systemd)
+[![build status](https://img.shields.io/docker/cloud/build/daosdo/ubuntu-systemd)](https://hub.docker.com/repository/docker/daosdo/ubuntu-systemd)
 
-A Dockerfile for building Ubuntu images that have systemd enabled.
+Ubuntu image that has systemd enabled.
 
 ## Branches
 
-Each branch in this git repository is used for building specific versions
-of Ubuntu images.
+Each branch in the repository is used for building a specific version.
 
-|Branch |Ubuntu Version       |FROM Docker image tag|
-|-------|---------------------|---------------------|
-|master |latest               |latest               |
-|20.10  |20.10                |20.10                |
-|20.04  |20.04                |20.04                |
-|18.04  |18.04                |18.04                |
+| Branch | Ubuntu Version | FROM Docker image tag |
+| ------ | -------------- | --------------------- |
+| master | latest         | latest                |
+| 20.10  | 20.10          | 20.10                 |
+| 20.04  | 20.04          | 20.04                 |
+| 18.04  | 18.04          | 18.04                 |
 
 ## Usage
 
 ### Run it
 
-```
+```bash
 docker run -d \
   --tty \
   --privileged \
@@ -34,12 +33,13 @@ running `docker logs`.
 
 ### Enter it
 
-```
+```bash
 docker exec -it daosd-ubuntu18.04-systemd /bin/bash
 ```
 
 ### Remove it
 
-```
+```bash
 docker rm -f daosd-ubuntu18.04-systemd
+
 ```
