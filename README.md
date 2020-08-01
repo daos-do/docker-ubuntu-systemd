@@ -1,6 +1,6 @@
 # Docker Ubuntu Systemd
 
-![Docker Image CI](https://github.com/daos-do/docker-ubuntu-systemd/workflows/Docker%20Image%20CI/badge.svg)
+[![Docker Image CI](https://github.com/daos-do/docker-ubuntu-systemd/workflows/docker%20build/badge.svg)](https://hub.docker.com/repository/docker/daosdo/ubuntu-systemd)
 
 A Dockerfile for building Ubuntu images that have systemd enabled.
 
