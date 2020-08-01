@@ -26,7 +26,7 @@ docker run -d \
   --privileged \
   --volume /sys/fs/cgroup:/sys/fs/cgroup:ro \
   --name daosd-ubuntu20.04-systemd \
-  daosdo/ubuntu-systemd:latest
+  daosdo/ubuntu-systemd:20.04
 ```
 
 Adding `--tty` allocates a pseudo-TTY and enables color in the logs when
