@@ -10,7 +10,7 @@ RUN DEBIAN_FRONTEND="noninteractive"; \
     apt-get -y update; \
     apt-get -y install tzdata; \
     apt-get -y install systemd systemd-sysv; \
-    apt-get -y install python3.8 python3-pip sudo curl wget gzip tar less; \
+    apt-get -y install python3.8 python3-apt python3-pip sudo curl wget gzip tar less; \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*; \
     cd /lib/systemd/system/sysinit.target.wants/; \
     ls | grep -v systemd-tmpfiles-setup | xargs rm -f $1; \
